@@ -28,10 +28,7 @@ end
 
 local function tokenize(sourceCode : string): {number}
 	local tokens = {}
-	local src = {}
-  for i = 1, #sourceCode do
-    insert(src, string.sub(src, i, i))
-  end
+	local src = string.split(sourceCode, "")
 
 	while #src > 0 do
 		if src[1] == "(" then
