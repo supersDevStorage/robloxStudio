@@ -4,7 +4,7 @@ local function shift(str : {string})
 	return table.remove(str, 1)
 end
 
-local TokenType = require("./tokenTypes.lua")
+local TokenType = require("./tokenTypes.luau")
 
 local Keywords = {
 	["nil"] = TokenType.Null
